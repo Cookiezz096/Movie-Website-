@@ -10,7 +10,7 @@ export class TMDBError extends Error {
   }
 }
 
-export const isConfigured = () => Boolean(API_KEY && API_KEY !== 'YOUR_API_KEY')
+export const isConfigured = () => Boolean(API_KEY)
 
 async function tmdbFetch(path, params = {}) {
   if (!isConfigured()) {

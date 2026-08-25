@@ -1,0 +1,10 @@
+{
+  "name": "saitayotong-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix saitayotong run dev",
+    "build": "npm --prefix saitayotong run build",
+    "preview": "npm --prefix saitayotong run preview",
+    "lint": "npm --prefix saitayotong run lint"
+  }
+}

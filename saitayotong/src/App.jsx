@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import { AppProvider } from './context/AppContext'
 import { Navbar } from './components/Navbar/Navbar'
 import { Footer } from './components/Footer/Footer'
@@ -30,6 +31,7 @@ function ScrollToTop() {
 function App() {
   return (
     <AppProvider>
+      <SpeedInsights />
       <ScrollToTop />
       <div className="flex min-h-screen flex-col bg-navy-900">
         <Navbar />
